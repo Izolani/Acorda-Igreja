@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acorda Igreja!</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1>🔥 ACORDA, IGREJA!</h1>
+<p><em>Um chamado pastoral para despertar a fé, restaurar corações e alinhar a Igreja com o propósito eterno de Deus.</em></p>
+
+<blockquote>
+  “Desperta, tu que dormes, levanta-te dentre os mortos, e Cristo te iluminará.”
+  <br>— Efésios 5:14
+</blockquote>
+
+<h2>A Visão do Projeto</h2>
+<p>
+O <strong>Acorda Igreja!</strong> nasce como um chamado pastoral em tempos de cansaço espiritual,
+distração e esfriamento da fé.
+</p>
+<p>
+Não é uma mensagem de acusação, mas de despertamento, cuidado e restauração.
+</p>
+
+<h2>Devocionais – 30 Dias</h2>
+<ul id="devocionais">
+  <li><a href="devocionais/dia01.html">Dia 01 – Desperta, tu que dormes</a></li>
+  <li><a href="devocionais/dia02.html">Dia 02 – Tempo de arrependimento</a></li>
+  <li><a href="devocionais/dia03.html">Dia 03 – Ouvidos atentos à voz de Deus</a></li>
+  <li><a href="devocionais/dia04.html">Dia 04 – Santidade em tempos difíceis</a></li>
+  <li><a href="devocionais/dia05.html">Dia 05 – Fogo no altar</a></li>
+  <li><a href="devocionais/dia06.html">Dia 06 – Retornando ao primeiro amor</a></li>
+  <li><a href="devocionais/dia07.html">Dia 07 – Alinhados com o céu</a></li>
+  <li><a href="devocionais/dia08.html">Dia 08 – Uma vida de oração</a></li>
+  <li><a href="devocionais/dia09.html">Dia 09 – Santidade no cotidiano</a></li>
+  <li><a href="devocionais/dia10.html">Dia 10 – O poder da Palavra</a></li>
+  <li><a href="devocionais/dia11.html">Dia 11 – Renovados no Espírito</a></li>
+  <li><a href="devocionais/dia12.html">Dia 12 – Vigilantes e firmes</a></li>
+  <li><a href="devocionais/dia13.html">Dia 13 – Uma fé perseverante</a></li>
+  <li><a href="devocionais/dia14.html">Dia 14 – Chamados à santificação</a></li>
+  <li><a href="devocionais/dia15.html">Dia 15 – A cruz no centro</a></li>
+  <li><a href="devocionais/dia16.html">Dia 16 – Vida cheia do Espírito</a></li>
+  <li><a href="devocionais/dia17.html">Dia 17 – O despertar da esperança</a></li>
+  <li><a href="devocionais/dia18.html">Dia 18 – Permanecer em Cristo</a></li>
+  <li><a href="devocionais/dia19.html">Dia 19 – Guardando o coração</a></li>
+  <li><a href="devocionais/dia20.html">Dia 20 – O chamado à obediência</a></li>
+  <li><a href="devocionais/dia21.html">Dia 21 – Uma Igreja viva</a></li>
+  <li><a href="devocionais/dia22.html">Dia 22 – O fogo que purifica</a></li>
+  <li><a href="devocionais/dia23.html">Dia 23 – Discernindo os tempos</a></li>
+  <li><a href="devocionais/dia24.html">Dia 24 – Firmados na verdade</a></li>
+  <li><a href="devocionais/dia25.html">Dia 25 – Servir com alegria</a></li>
+  <li><a href="devocionais/dia26.html">Dia 26 – Perseverar até o fim</a></li>
+  <li><a href="devocionais/dia27.html">Dia 27 – A esperança da glória</a></li>
+  <li><a href="devocionais/dia28.html">Dia 28 – O amor que desperta</a></li>
+  <li><a href="devocionais/dia29.html">Dia 29 – Vivendo para a eternidade</a></li>
+  <li><a href="devocionais/dia30.html">Dia 30 – Despertos para cumprir a missão</a></li>
+</ul>
+
+<script>
+  // 👉 DATA DE INÍCIO DA SÉRIE (AAAA-MM-DD)
+  const startDate = new Date("2026-01-29");
+  const today = new Date();
+
+  // Zerar horas para evitar erro de fuso
+  startDate.setHours(0,0,0,0);
+  today.setHours(0,0,0,0);
+
+  // Diferença em dias
+  const diffTime = today - startDate;
+  let dayNumber = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
+  // Limites
+  if (dayNumber < 1) dayNumber = 1;
+  if (dayNumber > 30) dayNumber = 30;
+
+  // Pegar todos os itens
+  const items = document.querySelectorAll("#devocionais li");
+
+  // Esconder todos primeiro
+  items.forEach(item => {
+    item.style.display = "none";
+  });
+
+  // Mostrar apenas os dias liberados
+  for (let i = 0; i < dayNumber; i++) {
+    items[i].style.display = "list-item";
+  }
+</script>
+
+<footer>
+  © 2026 Acorda Igreja! — Ministério Pastoral Online<br>
+  Palavra • Oração • Cuidado Espiritual
+</footer>
+
+</body>
+</html>

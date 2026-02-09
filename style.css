@@ -97,3 +97,86 @@ footer {
     font-size: 1.8em;
   }
 }
+
+/* =========================
+   TOPO COM LOGO
+   ========================= */
+
+.topo {
+  text-align: center;
+  padding: 30px 10px 10px;
+  background: #f4f1ec; /* mesmo fundo do site */
+}
+
+.logo {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+}
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+   ========================= */
+
+.menu {
+  text-align: center;
+  background: #7a1f1f;
+  padding: 12px 0;
+}
+
+.menu a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+ =========================
+   VÍDEOS – KERIGMA BÍBLICO
+   ========================= */
+
+.videos {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.videos iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ÁREA DA MÚSICA */
+#musica {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#musica audio {
+  width: 80%;
+  max-width: 400px;
+
+/* =========================
+   LETRA DA MÚSICA
+   ========================= */
+
+.letra-musica {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9f6f2;
+  border-left: 5px solid #7a1f1f;
+  font-style: italic;
+}
+
+.letra-musica h3 {
+  color: #7a1f1f;
+  margin-bottom: 15px;
+}
+
+.letra-musica p {
+  margin-bottom: 15px;
+}
+
